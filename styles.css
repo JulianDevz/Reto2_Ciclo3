@@ -1,0 +1,53 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cliente{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    border:2px;
+    border-color:blue;
+    border-style:solid;
+    background: rgb(203, 202, 211);
+    padding-bottom: 20px ; 
+}
+
+.fincas{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    border:2px;
+    border-color:blue;
+    border-style:solid;
+    background: rgba(189, 48, 48, 0.63);
+    padding-bottom: 20px ;  
+}
+
+.mensajes{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    border:2px;
+    border-color:blue;
+    border-style:solid;
+    background: rgb(95, 228, 113);
+    padding-bottom: 20px ;  
+}
+
+.tabla{
+   justify-content:  center;
+   align-items: center;
+   display: flex;
+   margin-top: 30px;
+   padding-bottom: 20px ;
+}
+
+.tabla2{
+    justify-content:  center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+    padding-bottom: 20px ;
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>reto2</title>
+    </head>
+
+    <body>
+
+        <!----------------------------------------->
+        <!-- Informacion sobre la tabla Clientes -->
+        <!----------------------------------------->
+        <div class="cliente">
+            <h1>CLIENTES</h1>
+
+            <h2>Listado de Clientes</h2>
+            <button onclick="traerInformacionClientes()"> Consultar </button>
+            <div  class="tabla" id="resultadoClientes"></div>
+
+            <div>
+                <h2>Ingrese los datos de los clientes</h2>
+                <label>ID</label>
+                <input class="redondeado"  type="number" id="idCliente"><br>
+                <label>NAME</label>
+                <input type="text" id="nameCliente"><br>
+                <label>EMAIL</label>
+                <input type="text" id="email"><br>
+                <label>AGE</label>
+                <input type="number" id="age"><br><br>
+            </div>
+
+            <button onclick="guardarInformacionClientes()">Guardar</button>
+            <button onclick="editarInformacionClientes()">Actualizar</button>
+        </div>
+
+        <!----------------------------------------->
+        <!-- Informacion sobre la tabla Fincas ---->
+        <!----------------------------------------->
+        <div class="fincas">
+            <h1>FINCAS</h1>
+
+            <h2>Listado de Fincas</h2>
+            <button onclick="traerInformacionFincas()"> Consultar </button>
+            <div class="tabla" id="resultadoFincas"></div>
+
+            <div>
+                <h2>Ingrese los datos de la finca</h2>
+                <label>ID</label>
+                <input type="number" id="idFinca"><br>
+                <label>ADDRESS</label>
+                <input type="text" id="address"><br>
+                <label>EXENSION</label>
+                <input type="number" id="exension"><br>
+                <label>CATEGORY_ID</label>
+                <input type="number" id="category_id"><br>
+                <label>NAME</label>
+                <input type="text" id="name"><br><br>
+            </div>
+
+            <button onclick="guardarInformacionFincas()">Guardar</button>
+            <button onclick="editarInformacionFincas()">Actualizar</button>
+        </div>
+
+        <!----------------------------------------->
+        <!-- Informacion sobre la tabla Mensajes -->
+        <!----------------------------------------->
+        <div class="mensajes">
+            <h1>MENSAJES</h1>
+
+            <h2>Listado de Mensajes</h2>
+            <button onclick="traerInformacionMensajes()"> Consultar </button>
+            <div class="tabla2" id="resultadoMensajes"></div>
+
+            <div>
+                <h2>Ingrese los datos de la finca</h2>
+                <label>ID</label>
+                <input type="number" id="idMensaje"><br>
+                <label>MENSAJE</label>
+                <input type="text" id="mensaje"><br><br>
+            </div>
+
+            <button onclick="guardarInformacionMensajes()">Guardar</button>
+            <button onclick="editarInformacionMensajes()">Actualizar</button>
+        </div>
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/misFunciones.js"></script>
+    </body>
+</html>
